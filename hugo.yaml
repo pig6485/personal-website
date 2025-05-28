@@ -1,4 +1,4 @@
-# baseURL: https://pig6485.github.io/personal-website/
+baseURL: https://pig6485.github.io/personal-website/
 languageCode: en-us
 title: Chun Hao Profile
 theme: "hugo-profile"
@@ -17,6 +17,8 @@ outputs:
     - "RSS"
 
 enableRobotsTXT: true
+relativeURLs: false
+canonifyURLs: true
 
 #services:
   #googleAnalytics:
