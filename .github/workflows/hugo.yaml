@@ -70,6 +70,12 @@ jobs:
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Debug - Print baseURL
+        run: |
+          echo "Base URL is: ${{ steps.pages.outputs.base_url }}/"
+          echo "Repository: ${{ github.repository }}"
+          echo "Repository owner: ${{ github.repository_owner }}"
+          echo "Repository name: ${{ github.event.repository.name }}"
       - name: Cache Save
         id: cache-save
         uses: actions/cache/save@v4
