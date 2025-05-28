@@ -1,0 +1,22 @@
+# Hugo output folders
+public/
+resources/
+.cache/
+.hugo_build.lock
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Editor configs
+.vscode/
+
+# Node dependencies (if using npm/yarn for frontend assets)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Deploy tools
+.deploy*/
