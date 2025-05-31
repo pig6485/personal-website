@@ -35,12 +35,12 @@ markup:
       unsafe: true
 
 Menus:
-  main:
-    - identifier: blog
-      name: Blog
-      title: Blog posts
-      url: /blogs
-      weight: 1
+  # main:
+  #   - identifier: blog
+  #     name: Blog
+  #     title: Blog posts
+  #     url: /blogs
+  #     weight: 1
     # - identifier: gallery
     #   name: Gallery
     #   title: Blog posts
@@ -68,7 +68,7 @@ params:
   title: "Chun Hao Profile"
   description: Text about my cool site
   # staticPath: ""  # The path to serve the static files from
-  favicon: "/fav.png"
+  favicon: "/favicon.ico"
 
   # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
   # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
@@ -141,8 +141,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Chun Hao."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that look great, feel fantastic, and function correctly."
+    subtitle: "I build and optimize digital solutions"
+    content: "I'm a versatile software developer with a knack for backend systems and a deep dive into SRE and DevOps practices."
     image: /images/hero.png
     bottomImage:
       enable: true
@@ -150,18 +150,15 @@ params:
     button:
       enable: true
       name: "Resume"
-      url: "#"
+      url: "/files/resume.pdf"
       download: true
       newPage: false
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
-        - icon: fab fa-x-twitter
-          url: https://example.com
-      customIcons:
-        - icon: /fav.png
-          url: "https://example.com"
+          url: https://github.com/pig6485
+        - icon: fab fa-facebook
+          url: https://www.facebook.com/zhang.jun.hao.858076
 
   # About
   about:
@@ -169,19 +166,22 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA.
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      Currently, I'm an IT professional at TSMC, primarily focused on developing robust web applications to address internal needs. Previously, I honed my skills at an AIAR startup, specializing in HoloLens application development for innovative solutions. I've also taken on freelance game development projects, broadening my technical horizons.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
+        - "Java"
+        - "Go"
+        - "TypeScript/JavaScript"
+        - "Kotlin"
         - "React"
-        - "Node"
-        - "Express"
+        - "Next.js"
+        - "Spring Boot"
+        - "Gin"
+        - "Quarkus"
+        - "PLG"
+        - "EFK"
 
   # Experience
   experience:
@@ -250,42 +250,22 @@ params:
     # title: "Custom Name"
     index: false
     items:
-      - title: "Master of Business Administration"
+      - title: "Master in Industrial Engineering and Engineering Management"
         school:
-          name: "University of California, Berkeley"
+          name: "National Tsing Hua University, Hsinchu, Taiwan"
           url: "https://example.org"
-        date: "2013 - 2015"
-        GPA: "3.8 out of 5.0"
+        date: "2017 - 2019"
         content: |-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-      - title: "Bachelor of Science in Computer Science"
+          - International Games System Game Competition.
+          - From IP To IPO program (FITI).
+          - Tool Path Planning in Five-Axis Flank Milling for Tooth Surfaces of Spiral Bevel Gears
+      - title: "Bachelor in Industrial Engineering and Engineering Management"
         school:
-          name: "Massachusetts Institute of Technology"
+          name: "National Tsing Hua University, Hsinchu, Taiwan"
           url: "https://example.org"
-        date: "2009 - 2013"
-        GPA: "3.9 out of 5.0"
+        date: "2012 - 2016"
         content: |-
-          I Publiced two papers in the ACM SIGCHI Conference on Artificial Intelligence.
-          - [Fast and Accurate Object Detection with a Single Convolutional Neural Network](https://example.com)
-          - Face mask detection using a single convolutional neural network.
-
-          Extracurricular Activities
-            - Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            - Tempora esse, eaque delectus nulla quo doloribus itaque expedita alias natus optio totam maxime nihil excepturi velit a animi laborum hic similique.
-        featuredLink:
-          enable: true
-          name: "My academic record"
-          url: "https://example.com"
-      - title: "High School"
-        school:
-          name: "Thomas Jefferson High School for Science and Technology."
-          url: "https://example.org"
-        GPA: "4.2 out of 5.0"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
+          - Volleyball school team
 
   # Achievements
   achievements:
@@ -378,7 +358,7 @@ params:
       path: "blogs"
       count: 3
       title: Recent Posts
-      enable: true
+      enable: false
       disableFeaturedImage: false
     socialNetworks:
       github: https://github.com/pig6485
